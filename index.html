@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,12 +21,8 @@
 		<meta name="description" content="">
 	
 		<title>Shannonlee Gafney Porfolio</title>
-	
-	
-		<!-- javascript files -->
-		<script type="text/javascript" src="js/main.js"></script>
-
-	
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<!-- CSS files -->
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" />
@@ -34,11 +31,10 @@
 
 
 	</head>
-	<body onload="LoaderTimer()" >
-
+	<body onload="LoaderTimer()">
 		<div id="loader"></div>
 
-		<div style="display:none;" id="MainDiv" class="animate-bottom">
+		<div style="display:none; padding:0px;" id="MainDiv" class="animate-bottom">
 			<!--Side bar-->
 			<div class="conatiner-menu">
 				<div class="center-text">
@@ -56,23 +52,102 @@
 					</ul>
 
 					<ul class="list-items">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Resume</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a onclick="navClick()" href="#home">Home</a></li>
+						<li><a onclick="navClick()" href="#about">About</a></li>
+						<li><a onclick="navClick()" href="#portfolio">Portfolio</a></li>
+						<li><a onclick="navClick()" href="#resume">Resume</a></li>
+						<li><a onclick="navClick()" href="#contact">Contact</a></li>
 					</ul>
-
 				</nav>
+				
+				
 			</div>
 			<main id="main" style="height: 100%;">
-				
+
 				<div class="button-menu" id="button-menu">
 					<i class="im im-menu-dot-v" aria-hidden="true"></i>
 				</div>
 
-				<h1>Test</h1>
+				<div class="button-top" id="top">
+					<i class="im im-angle-up" aria-hidden="true"></i>
+				</div>
+
+				<div id="home" class="hero-section">
+					<div class="top-heading">
+						<h2><span class="heading-bg">Shannonlee Gafney</span></h2>
+					</div>
+					<!--Animated heading-->
+					<div class="bottom-heading">
+						<h4 class="heading-bg"><span class="text"></span></h4>
+					</div>
+				</div>
+				<div class="container spacing">
+					<div class="row">
+					<div style="padding-bottom: 30px;" id="about" class="col"><h3 class="page-headings"><u>About</u></h3></div>
+					</div>
+					<!--about Section-->
+					<div id="flyin" style="padding-left: 25px; padding-top: 30px;" class="row">
+						<div class="col" style="padding-bottom: 60px;">
+							
+
+  								<img width="300" height="300" src="assets/profile.jpg" class="rounded" alt="...">
+							
+						</div>
+						
+						<div class="col-8">
+							<h5><b>Software Engineer & Machine-learning Engineer</b></h5>
+							<br>
+							<p><i>I'm a young passionate tech and motorcycle enthusiast. 
+								<br>Consistently learning and trying new ideas within software development 
+								and machine learning.</i>
+							</p>
+
+							<div class="row row-cols-2">
+								<div class="col"><b>Name:</b> Shannonlee Gafney</div>
+								<div class="col"><b>Perfer: </b>Shannon</div>
+								<div class="col"><b>Age: </b>25 years old</div>
+								<div class="col"><b>Email: </b>shannongafney@gmail.com</div>
+								<div class="col"><b>Location: </b>Uk, Essex</div>
+								<div class="col"><b>Freelance: </b>Available</div>
+  							</div>	
+							<br>
+							 <p>
+								 I'm an aspiring software/ machine learning engineer. 
+								 I've been programming since I was 20 years old. 
+								 My career passion is software/machine learning development. 
+								 My passion drives me to keep learning and creating, currently working towards 
+								 professional certifications in C# development, python, SQL and machine learning.  
+							 </p>
+						
+						</div>
+
+						
+							
+					</div>
+					<!--Skills section-->
+					<div id="flyin" style="padding-left: 25px; padding-top: 30px;" class="row">
+					
+					</div>
+
+					<!--Profolio-->					
+					<div id="flyin" style="padding-left: 25px; padding-top: 30px;" class="row">
+					
+					</div>
+					<!--Resume Section-->
+					<div id="flyin" style="padding-left: 25px; padding-top: 30px;" class="row">
+					
+					</div>	
+					<!--Contact Section-->
+					<div id="flyin" style="padding-left: 25px; padding-top: 30px;" class="row">
 				
+				
+					</div>	
+
+				</div>
+
+
+
+				<div class="bottom-spacing"></div>
 			</main>
 			
 		</div>

@@ -77,7 +77,8 @@ body {
 .profile-name{
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 5px 0px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 
 }
 
@@ -105,11 +106,13 @@ ul.social-items li {
   background: #1A1110;
   width: var(--width);
   height: 100vh;
+  color: white;
 }
 
 .list-items{
   list-style: none;
   padding: 0px;
+  padding-top: 10px;
 }
 
 .list-items a{
@@ -119,7 +122,7 @@ ul.social-items li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 60px;
   
 }
 
@@ -133,6 +136,7 @@ main{
   z-index: 100;
   background: #fff;
   transition: all 0.8s;
+  padding: left 20px right 20px;
 }
 
 main.active{
@@ -152,9 +156,25 @@ main.active{
   font-size: 20px;
 }
 
+.button-top{
+  --xy: 20px;
+  position: fixed;
+  bottom: var(--xy);
+  right: var(--xy);
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.button-top.active{
+  display: none;
+}
+
 .button-menu.active{
   color: #fff;
-
 }
 
 @media (max-width: 600px){
@@ -168,8 +188,8 @@ main.active{
     width: 100%;
   }
   .social{
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     padding: 10px;
   }
   .list-items a{
@@ -181,4 +201,44 @@ main.active{
   main{
     left: var(--width);
   }
+}
+
+.hero-section{
+  background: url("../assets/MainBG\(2\).jpg");
+  height: 700px;
+  padding: 1px;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.top-heading{
+  margin-top: 450px;
+  margin-left: 30px;
+}
+
+.bottom-heading{
+  margin-left: 40px;
+}
+
+span{
+  background-color: rgba(0, 0, 0, 0.733);
+}
+
+.text{
+  font-weight: 100;
+  color: #e7e7e7;
+}
+.dud{
+  color: #00f7ff8f;
+}
+
+.spacing{
+  padding-top: 60px;
+}
+
+.bottom-spacing{
+  padding-bottom: 50px;
 }
