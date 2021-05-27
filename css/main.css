@@ -1,8 +1,16 @@
 /*
 *
-*Created  by Shannonlee Gafney, this is my main CSS file
+*Author Shannonlee Gafney
+*CSS for portfolio
 *
 */
+
+body {
+  font-family: "Arvo script=latin rev=1"; 
+  margin: 0;
+  --width: 250px;
+}
+
 
 #loader {
   position: absolute;
@@ -12,9 +20,9 @@
   width: 150px;
   height: 150px;
   margin: -75px 0 0 -75px;
-  border: 16px solid #a21b3e;
+  border: 16px solid #444344b2;
   border-radius: 50%;
-  border-top: 16px solid #dc6516;
+  border-top: 16px solid #0ddbe2;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 1s linear infinite;
@@ -50,7 +58,127 @@
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
+#MainDiv {
   display: none;
+}
+
+
+.profile{
+  
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 5px solid rgba(128, 128, 128, 0.596);
+}
+
+.profile-name{
+  color: rgb(255, 255, 255);
   text-align: center;
+  padding: 5px 0px;
+
+}
+
+.center-text{
+  text-align: center;
+}
+
+.social{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.social-items{
+  padding: 0px;
+  margin: 0px;
+}
+
+ul.social-items li {
+  display:inline;
+  list-style: none;
+}
+
+.conatiner-menu{
+  background: #1A1110;
+  width: var(--width);
+  height: 100vh;
+}
+
+.list-items{
+  list-style: none;
+  padding: 0px;
+}
+
+.list-items a{
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  
+}
+
+main{
+  position: absolute;
+  width: calc(100% - var(--width));
+  height: 100hv;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  transition: all 0.8s;
+}
+
+main.active{
+  left: var(--width);
+}
+
+.button-menu{
+  --xy: 20px;
+  position: fixed;
+  top: var(--xy);
+  right: var(--xy);
+  display: none;
+  justify-self: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.button-menu.active{
+  color: #fff;
+
+}
+
+@media (max-width: 600px){
+  body{
+    --width: 100%;
+  }
+  .button-menu{
+    display: flex;
+  }
+  main{
+    width: 100%;
+  }
+  .social{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  .list-items a{
+    height: 60px;
+  }
+}
+
+@media (min-width:600px){
+  main{
+    left: var(--width);
+  }
 }
