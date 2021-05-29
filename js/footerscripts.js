@@ -4,6 +4,10 @@
 *
 */
 
+//auto scroll nav and set active
+
+
+
 //Website Loader
 
 function LoaderTimer() {
