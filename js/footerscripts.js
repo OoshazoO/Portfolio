@@ -4,7 +4,7 @@
 *
 */
 //check if scroll if not display scroll to toop button
-let button_menu = document.getElementById('button-menu')
+let button_menu = document.getElementById('button-menu');
 
 
 //auto scroll nav and set active || To top auto scroll
@@ -50,8 +50,8 @@ function showPage() {
 
 //Mobile support menu
 
-let button_top = document.getElementById('top')
-let main = document.getElementById('main')
+let button_top = document.getElementById('top');
+let main = document.getElementById('main');
 button_menu.addEventListener("click", e=>{
   button_menu.classList.toggle("active")
   button_top.classList.toggle("active")
