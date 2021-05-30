@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 
-Still in development but have a loader with a spining element
+Complete code back up of portfolio todate. Created by Shannonlee Gafney
