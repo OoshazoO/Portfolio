@@ -7,7 +7,7 @@
 let button_menu = document.getElementById('button-menu');
 
 
-//auto scroll nav and set active || To top auto scroll
+// To top auto scroll
 
 //smoothscroll
 $(document).ready(function() {
@@ -17,24 +17,30 @@ $(document).ready(function() {
         return false;
     });
 
-
-});
-
-$(document).ready(function() {
-
-    $('#tohome').click(function(){
-        $('#main').animate({scrollTop:0}, 'slow');
-        return false;
-    });
-});
-
-$("#toabout").click(function() {
+      $("#toabout").click(function() {
   document.getElementById("about").scrollIntoView( {behavior: "smooth" })
-})
+});
 
 $("#toprojects").click(function() {
   document.getElementById("portfolio").scrollIntoView( {behavior: "smooth" })
-})
+});
+
+});
+
+ $(document).ready(function() {
+
+
+      $('#tohome').click(function(){
+          $('#main').animate({scrollTop:0}, 'slow');
+          return false;
+      });
+
+      
+
+  });
+
+
+
 
 
 //Website Loader
@@ -67,7 +73,15 @@ function navClick()
   }
   
   main.classList.toggle("active");
+//included mobile support and scroll to div fixes
+ 
+
+  
+
 }
+
+
+
 
 //Word scrambler
 
