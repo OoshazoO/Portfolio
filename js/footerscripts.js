@@ -3,9 +3,38 @@
 *Created  by Shannonlee Gafney, this is my footer scripts javascrpt file
 *
 */
+//check if scroll if not display scroll to toop button
+let button_menu = document.getElementById('button-menu')
 
-//auto scroll nav and set active
 
+//auto scroll nav and set active || To top auto scroll
+
+//smoothscroll
+$(document).ready(function() {
+
+    $('#top').click(function(){
+        $('#main').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+
+
+});
+
+$(document).ready(function() {
+
+    $('#tohome').click(function(){
+        $('#main').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+});
+
+$("#toabout").click(function() {
+  document.getElementById("about").scrollIntoView( {behavior: "smooth" })
+})
+
+$("#toprojects").click(function() {
+  document.getElementById("portfolio").scrollIntoView( {behavior: "smooth" })
+})
 
 
 //Website Loader
@@ -21,7 +50,6 @@ function showPage() {
 
 //Mobile support menu
 
-let button_menu = document.getElementById('button-menu')
 let button_top = document.getElementById('top')
 let main = document.getElementById('main')
 button_menu.addEventListener("click", e=>{
@@ -32,8 +60,12 @@ button_menu.addEventListener("click", e=>{
 
 function navClick()
 {
-  button_menu.classList.toggle("active");
-  button_top.classList.toggle("active");
+  
+  if (button_menu.classList.contains("active")) {
+    button_top.classList.toggle("active");
+    button_menu.classList.toggle("active");
+  }
+  
   main.classList.toggle("active");
 }
 
@@ -121,3 +153,4 @@ const next = () => {
 };
 
 next();
+

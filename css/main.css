@@ -5,6 +5,8 @@
 *
 */
 
+
+
 html, body{
   overflow-x: hidden;
 }
@@ -149,6 +151,7 @@ main.active{
 }
 
 .button-menu{
+  color: black;
   --xy: 20px;
   position: fixed;
   top: var(--xy);
@@ -162,6 +165,7 @@ main.active{
 }
 
 .button-top{
+  color: black;
   --xy: 20px;
   position: fixed;
   bottom: var(--xy);
